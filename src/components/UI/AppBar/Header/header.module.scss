@@ -1,0 +1,32 @@
+.gridContainer {
+	align-items:center;
+
+	.menu {
+		width:calc(100% - 80%);
+
+		.typography {
+			display:flex;
+			font-size:1.2em;
+			align-items:center;
+			text-transform:uppercase;
+						
+			.menu_icon {
+				margin-right:10px;
+			}
+			
+			.home {
+				color:white;
+			}
+		}
+	}
+
+	.exit {
+		width:calc(100% - 85%);
+		display:flex;
+		justify-content:flex-end;
+
+		.exit_button {
+			color:white;
+		}
+	}
+}

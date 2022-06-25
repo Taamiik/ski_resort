@@ -1,0 +1,77 @@
+.wrapper {
+	min-height:auto;
+	width:380px;
+	border-radius:12px;
+	background:white;
+	padding:5px 0 20px;
+	
+	.header {
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		padding:10px;
+		
+		.closeIcon {
+			cursor:pointer;
+		}
+	}
+	
+	&_image {
+		width:170px;
+		height:170px;
+		border-radius:50%;
+		margin:0 auto;
+		
+		.avatar {
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+		}
+	}
+	
+	&_name {
+		text-align:center;
+		margin-top:20px;
+	}
+	
+	.sportType {
+		text-align:center;
+		color:#707EF9;
+		font-size:14px;
+	}
+	
+	.cardData {
+		text-align:center;
+		margin-top:30px;
+		
+		.header {
+			text-transform:uppercase;
+			font-size:12px;
+			color:#A0A0A0;
+		}
+		
+		.title {
+			font-size:20px;
+		}
+	}
+	
+	.button {
+		display:flex;
+		justify-content:center;
+		
+		.buttonStyle {
+			color:white;
+			text-transform:none;
+			width:169px;
+			height:46px;
+			border-radius:21px;
+			margin:20px auto 5px;
+			background:#4158F6;
+			text-transform:uppercase;
+			
+			&:hover {
+				background:#4158F6;
+			}
+		}
+	}
+}

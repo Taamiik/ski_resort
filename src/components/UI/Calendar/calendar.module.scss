@@ -1,0 +1,159 @@
+.wrapper {
+	width:100%;
+	height:100vh;
+	top:0;
+	left:0;
+	display:flex;
+	position:fixed;
+	
+
+	.calendar {
+		width:350px;
+		height:450px;
+		border-radius:10px;
+		background:white;
+		margin:auto;
+		display:flex;
+		box-shadow: 0px 3px 10px 1px black;
+
+		.container {
+			width:calc(100% - 5%);
+			height:calc(100% - 5%);
+			margin:auto;
+			
+			h2 {
+				text-transform:uppercase;
+				color: #4158F6;
+			}
+			
+			.monthSlider {
+				margin-top:5px;
+				display:flex;
+				align-items:center;
+				justify-content:space-between;
+				font-size:1.2em;
+
+				.arrow {
+					cursor:pointer;
+				}
+				
+				.monthAndYear {
+					display:flex;
+					
+					.numberYear {
+						cursor:pointer;
+					}
+					
+					p {
+						margin:0px 5px;
+					}
+				}
+			}
+			
+			.weekDays {
+				margin:1em 0 0.5em;
+				font-size:1.2em;
+				
+				.listDays {
+					display:grid;
+					grid-template-columns: repeat(7, 1fr);
+					color:#939393;
+					text-align:center;
+					
+					li {
+						width:45px;
+					}
+				}
+			}
+			
+			.numberDays {
+				display:grid;
+				grid-template-columns: repeat(7, 1fr);
+				flex-wrap:wrap;
+				text-align:center;
+				
+				.days {
+					width:45px;
+					height:45px;
+					margin:0.1em 0;
+					font-size:1.2em;
+					border-radius:90%;
+					cursor:pointer;
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					
+					&:hover {
+						background:rgba(0, 0, 0, 0.1);
+					}
+				}
+				
+				
+				.today {
+					background:#1976d2;
+					color:white;
+					border:1px solid black;
+					
+					&:hover {
+						background:#1976d2;
+						color:white;
+					}
+				}
+			}
+			
+			
+			.showListYears {
+				width:100%;
+				overflow-y:auto;
+				display:flex;
+				flex-wrap:wrap;
+				background:white;
+				
+				animation: anim 0.2s ease forwards;
+				
+				@keyframes anim {
+					from {
+						height:0px;
+					}
+					to {
+						height:300px;
+					}
+				}
+				
+				.year {
+					cursor:pointer;
+					margin:10px;
+					padding:10px;
+					border-radius:10px;
+					
+					&:hover {
+						background:#1976d2;
+						color:white;
+						transition:0.3s ease;
+					}
+					
+					&:not(:hover) {
+						color:black;
+						transition:0.3s ease;
+					}
+				}
+				
+				span {
+					margin:0px 10px;
+				}
+				
+				&::-webkit-scrollbar {
+					width: 7px;
+					padding:10px;
+					background:transparent;
+				}
+				
+				&::-webkit-scrollbar-thumb {
+					background-color: #E6E6E6;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+}
+

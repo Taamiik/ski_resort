@@ -1,0 +1,29 @@
+.navbar {
+	.item {
+		display:flex;
+		align-items:center;
+		margin:1.7em 0;
+		
+		.icon {
+			margin-right:20px;
+			font-size:1.8em;
+			color:#A5AAAD;
+		}
+		
+		.link {
+			color:#A5AAAD;
+			font-size:1.2em;
+			cursor:pointer;
+		}
+		
+		.active {
+			color:blue;
+			font-size:1.2em;
+		}
+	}
+	
+	.settings {
+		margin-top:4em;
+	}
+}
+

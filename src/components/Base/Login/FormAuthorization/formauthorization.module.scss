@@ -1,0 +1,19 @@
+.fields  {
+	text-align:center;
+	margin-top:2em;
+		
+	.buttonStyle {
+		color:white;
+		text-transform:none;
+		width:169px;
+		height:46px;
+		border-radius:21px;
+		margin:1rem auto;
+		background:#4158F6;
+				
+		&:hover {
+			background:#4158F6;
+		}
+	}
+}
+	

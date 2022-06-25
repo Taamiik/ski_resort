@@ -1,0 +1,16 @@
+.wrapper {
+	background:rgba(56, 65, 220, 0.5);
+	border-radius:12px;
+	padding:5px 10px;
+	width:700px;
+	height:auto;
+	z-index:1;
+	position:absolute;
+	color:white;
+	
+	.user {
+		margin:10px 0;
+		cursor:pointer;
+	}
+}
+

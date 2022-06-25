@@ -1,0 +1,21 @@
+.wrapper {
+	width:169px;
+	height:46px;
+	margin:20px auto;
+	display:flex;
+	justify-content: space-between;
+		
+	.icons {
+		width:46px;
+		height:46px;
+		border-radius:40px;
+		border:1px solid #DDDDDD;
+		cursor:pointer;
+		display:flex;
+			
+		.icon {
+			margin:auto;
+			font-size:1.7em;
+		}
+	}
+}

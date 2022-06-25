@@ -1,0 +1,63 @@
+.wrapper {
+	min-height:auto;
+	width:380px;
+	border-radius:12px;
+	background:white;
+	padding:5px 0 20px;
+	
+	.header {
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		padding:10px;
+		
+		.closeIcon {
+			cursor:pointer;
+		}
+	}
+	
+	.info {
+		width:330px;
+		height:140px;
+		margin:0 auto;
+		
+		p {
+			text-align:center;
+		}
+		
+		.title {
+			font-size:2.2em;
+			font-weight:bold;
+		}
+		
+		.numberSkipass {
+			font-size:1.5em;
+		}
+	}
+
+	
+	.confirmation {
+		text-align:center;
+		margin-top:10px;
+	}
+	
+	.button {
+		display:flex;
+		justify-content:center;
+		
+		.buttonStyle {
+			color:white;
+			text-transform:none;
+			width:169px;
+			height:46px;
+			border-radius:21px;
+			margin:20px auto 5px;
+			background:#4158F6;
+			text-transform:uppercase;
+			
+			&:hover {
+				background:#4158F6;
+			}
+		}
+	}
+}

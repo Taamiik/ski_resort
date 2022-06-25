@@ -1,0 +1,74 @@
+@mixin animation() {
+	animation: anim 0.3s ease forwards;
+	
+	@keyframes anim {
+		from {
+			height: 580px;
+		}
+		to {
+			height: 100px;
+		}
+	}
+}
+
+
+@mixin content() {
+	.header {
+		display:flex;
+		align-items:center;
+		padding:30px 0 0 30px;
+		justify-content:space-between;
+		margin-bottom:20px;
+		
+		.title {
+			width:15%;
+		}
+			
+		.addButton {
+			width:35%;
+		}	
+			
+		.pagination {
+			width:35%;
+			display:flex;
+			justify-content:flex-end;
+		}
+			
+		.rollBlock {
+			width:15%;
+			display:flex;
+			justify-content:center;
+			transform:rotate(180deg);
+			cursor:pointer;
+			
+			.expand {
+				color:#4158F6;
+				transform: rotate(180deg);
+			}
+			
+			.rollUp {
+			
+				.arrow {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+	
+	.footer {
+		color:#4158F6;
+		display:flex;
+		justify-content:flex-end;
+		position:absolute;
+		bottom:10px;
+		
+		.all {
+			cursor:pointer;
+			display:flex;
+			
+			a {
+				color:#4158F6;
+			}
+		}
+	}
+}

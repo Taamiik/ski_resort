@@ -1,0 +1,107 @@
+@mixin gridStyle {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.bodyUser {
+	@include gridStyle
+	
+	grid-template-columns:45% 45%;
+		
+	.item {
+		margin:5px;
+		animation: anim 0.5s ease forwards;
+		
+		
+		@keyframes anim {
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:1;
+			}
+		}
+		.card {
+			box-shadow:none;
+			position:relative;
+			margin-bottom:10px;
+			padding:5px 0;
+			cursor:pointer;
+			
+			.grid {
+				align-items:center;
+					
+				.ava {
+					width:20%;
+					height:auto;
+					display:flex;
+					jusfify-content:center;
+						
+					.avatar {
+						width:60px;
+						height:60px;
+					}
+				}
+					
+				.description {
+					width:60%;
+					height:auto;
+						
+					.name {
+						font-size:1.2em;
+					}
+						
+					.age {
+						color:gray;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.bodySkipass {
+	@include gridStyle
+			
+	grid-template-columns:90%;
+		
+	.itemSkipass {
+		margin:10px 0;
+		border-radius:8px;
+		position:relative;
+		animation: anim 0.5s ease forwards;
+	
+		@keyframes anim {
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:1;
+			}
+		}
+		
+		.background {
+			width:100%;
+		}
+			
+		.description {
+			position:absolute;
+			top:30%;
+			left:10%;
+			bottom:50%;
+			color:white;
+				
+			.numberCard {
+				font-size:20px;
+			}
+				
+			.price {
+				font-size:25px;
+				font-weight:bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.inputWrapper {
+	height:40px;
+	margin-top:0.4em;
+	
+	.input {
+		width:330px;
+		height:inherit;
+		margin:10px auto;
+		display:block;
+		border-radius:10px;
+		border:none;
+		padding-left:15px;
+		font-size:0.8em;
+		background:#F3F3F3;
+	}
+	
+	.error {
+		border:1px solid red;
+	}
+	
+}
+
+.fieldDate {
+	width:330px;
+	height:40px;
+	margin:10px auto;
+	background:#F3F3F3;
+	border-radius:10px;
+
+	display:flex;
+	align-items:center;
+	cursor:pointer;
+	color:blue;
+	padding-right:10px;
+		
+	.inputdate {
+		width:inherit;
+		height:inherit;
+		background:transparent;
+		border:none;
+		padding-left:15px;
+		
+	}
+	
+	.error {
+		border: 2px solid red;
+	}
+		
+	.iconcalend {
+		opacity:0.5;
+			
+		&:hover {
+			opacity:1;
+			transition:0.1s ease;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.buttonWrapper {
+	margin:25px 0;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+	.button {
+		width:169px;
+		height:46px;
+		background:#4158F6;
+		border-radius:21px;
+		border:none;
+		color:white;
+		cursor:pointer;
+	}
+}
+
+
+.addbutton {
+	display:flex;
+	align-items:center;
+	border:2px solid blue;
+	border-radius:10px;
+	cursor:pointer;
+	padding:5px 10px;
+	background:transparent;
+	color:blue;
+	font-size:0.9em;
+	
+	span {
+		padding:0 3px;
+	}
+	
+	&:hover {
+		background:blue;
+		color:white;
+		border-radius:10px;
+		transition:0.2s ease;
+	}
+	
+	&:not(:hover) {
+		background:transparent;
+		color:blue;
+		transition:0.2s ease;
+	}
+}
